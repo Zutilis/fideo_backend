@@ -4,11 +4,11 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using WebApplication1.Configurations;
-using WebApplication1.DTO;
-using WebApplication1.Models;
+using SlamBackend.Configurations;
+using SlamBackend.DTO;
+using SlamBackend.Models;
 
-namespace WebApplication1.Services
+namespace SlamBackend.Services
 {
     public class AuthService
     {

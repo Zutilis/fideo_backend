@@ -1,7 +1,7 @@
-﻿using WebApplication1.DTO;
-using WebApplication1.Models;
+﻿using SlamBackend.DTO;
+using SlamBackend.Models;
 
-namespace WebApplication1.Repositories
+namespace SlamBackend.Repositories
 {
     public class SubjecService
     {

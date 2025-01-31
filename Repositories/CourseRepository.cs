@@ -1,30 +1,30 @@
-﻿using WebApplication1.CourseDbContext;
-using WebApplication1.Models;
+﻿using SlamBackend.CourseDbContext;
+using SlamBackend.Models;
 
-namespace WebApplication1.Repositories
+namespace SlamBackend.Repositories
 {
     public class CourseRepository
     {
-        public readonly CourseContext _context;
+        public readonly BackendContext _context;
 
-        public CourseRepository(CourseContext context)
+        public CourseRepository(BackendContext context)
         {
             _context = context;
         }
 
-        public void CreateCourse(Course course)
+        public void CreateCourse(Business course)
         {
             _context.Courses.Add(course);
             _context.SaveChanges();
         }
 
-        public void UpdateCourse(Course course)
+        public void UpdateCourse(Business course)
         {
             _context.Courses.Update(course);
             _context.SaveChanges();
         }
 
-        public List<Course> GetCourses()
+        public List<Business> GetCourses()
         {
             return _context.Courses.ToList();
         }

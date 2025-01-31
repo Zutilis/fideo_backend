@@ -1,4 +1,4 @@
-﻿namespace WebApplication1.DTO
+﻿namespace SlamBackend.DTO
 {
     public class RoleDTO
     {

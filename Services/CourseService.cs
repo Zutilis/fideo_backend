@@ -1,8 +1,8 @@
-﻿using WebApplication1.DTO;
-using WebApplication1.Models;
-using WebApplication1.Repositories;
+﻿using SlamBackend.DTO;
+using SlamBackend.Models;
+using SlamBackend.Repositories;
 
-namespace WebApplication1.Services
+namespace SlamBackend.Services
 {
     public class CourseService
     {
@@ -15,7 +15,7 @@ namespace WebApplication1.Services
 
         public void CreateCourse(CourseCreateDTO course)
         {
-            Course c = new Course
+            Business c = new Business
             {
                 StartDate = course.StartDate,
                 EndDate = course.EndDate,
@@ -28,7 +28,7 @@ namespace WebApplication1.Services
 
         public void UpdateCourse(CourseUpdateDTO course, int subjectId)
         {
-            Course c = FindSubject(subjectId);
+            Business c = FindSubject(subjectId);
 
             if (c == null)
                 throw new BadHttpRequestException("Le sujet n'existe pas");
@@ -41,12 +41,12 @@ namespace WebApplication1.Services
             this.repository.UpdateCourse(c);
         }
 
-        public Course FindSubject(int courseId)
+        public Business FindSubject(int courseId)
         {
             return this.repository._context.Courses.Find(courseId);
         }
 
-        public List<Course> GetCourses()
+        public List<Business> GetCourses()
         {
             return this.repository.GetCourses();
         }

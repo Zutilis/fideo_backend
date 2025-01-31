@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using WebApplication1.Models;
+using SlamBackend.Models;
 
-namespace WebApplication1.DTO
+namespace SlamBackend.DTO
 {
     public class SignInDTO
     {

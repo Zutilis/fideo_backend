@@ -1,9 +1,9 @@
 ﻿
-using WebApplication1.DTO;
-using WebApplication1.Models;
-using WebApplication1.Repositories;
+using SlamBackend.DTO;
+using SlamBackend.Models;
+using SlamBackend.Repositories;
 
-namespace WebApplication1.Services
+namespace SlamBackend.Services
 {
     public class TeacherService
     {

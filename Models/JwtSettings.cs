@@ -1,4 +1,4 @@
-﻿namespace WebApplication1.Configurations
+﻿namespace SlamBackend.Configurations
 {
     public class JwtSettings
     {

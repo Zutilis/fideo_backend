@@ -3,11 +3,11 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Text;
-using WebApplication1.CourseDbContext;
-using WebApplication1.Models;
-using WebApplication1.Repositories;
-using WebApplication1.Services;
-using WebApplication1.Configurations;
+using SlamBackend.CourseDbContext;
+using SlamBackend.Models;
+using SlamBackend.Repositories;
+using SlamBackend.Services;
+using SlamBackend.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -61,7 +61,7 @@ builder.Services.AddScoped<CourseService>();
 builder.Services.AddScoped<SubjecService>();
 builder.Services.AddScoped<AuthService>();
 
-builder.Services.AddDbContext<CourseContext>(options =>
+builder.Services.AddDbContext<BackendContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
         new MySqlServerVersion(new Version(8, 0, 31))
@@ -72,7 +72,7 @@ builder.Services.AddControllersWithViews();
 // builder.Services.AddDbContext<CourseContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddIdentity<User, Role>()
-    .AddEntityFrameworkStores<CourseContext>()
+    .AddEntityFrameworkStores<BackendContext>()
     .AddDefaultTokenProviders();
 
 var app = builder.Build();

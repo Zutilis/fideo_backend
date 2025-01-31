@@ -1,13 +1,13 @@
-﻿using WebApplication1.CourseDbContext;
-using WebApplication1.Models;
+﻿using SlamBackend.CourseDbContext;
+using SlamBackend.Models;
 
-namespace WebApplication1.Repositories
+namespace SlamBackend.Repositories
 {
     public class TeacherRepository
     {
-        public readonly CourseContext _context;
+        public readonly BackendContext _context;
 
-        public TeacherRepository(CourseContext context)
+        public TeacherRepository(BackendContext context)
         {
             _context = context;
         }

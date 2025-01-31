@@ -4533,11 +4533,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/julesducrot/Documents/VsCode Projects/Cours/net/WebApplication1/WebApplication1/WebApplication1.csproj",
-      "projectName": "WebApplication1",
-      "projectPath": "/Users/julesducrot/Documents/VsCode Projects/Cours/net/WebApplication1/WebApplication1/WebApplication1.csproj",
+      "projectUniqueName": "/Users/julesducrot/Documents/VsCodeProjects/Cours/ProjetSlam/slam_backend/SlamBackend.csproj",
+      "projectName": "SlamBackend",
+      "projectPath": "/Users/julesducrot/Documents/VsCodeProjects/Cours/ProjetSlam/slam_backend/SlamBackend.csproj",
       "packagesPath": "/Users/julesducrot/.nuget/packages/",
-      "outputPath": "/Users/julesducrot/Documents/VsCode Projects/Cours/net/WebApplication1/WebApplication1/obj/",
+      "outputPath": "/Users/julesducrot/Documents/VsCodeProjects/Cours/ProjetSlam/slam_backend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/julesducrot/.nuget/NuGet/NuGet.Config"
