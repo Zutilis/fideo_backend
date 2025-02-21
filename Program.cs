@@ -51,15 +51,23 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<TeacherRepository>();
-builder.Services.AddScoped<CourseRepository>();
-builder.Services.AddScoped<SubjectRepository>();
+builder.Services.AddScoped<AppointmentRepository>();
+builder.Services.AddScoped<AppointmentStatusRepository>();
 builder.Services.AddScoped<AuthRepository>();
+builder.Services.AddScoped<AvailableSlotRepository>();
+builder.Services.AddScoped<BusinessRepository>();
+builder.Services.AddScoped<OfferRepository>();
+builder.Services.AddScoped<PointsRepository>();
+builder.Services.AddScoped<ReviewRepository>();
 
-builder.Services.AddScoped<TeacherService>();
-builder.Services.AddScoped<CourseService>();
-builder.Services.AddScoped<SubjecService>();
+builder.Services.AddScoped<AppointmentService>();
+builder.Services.AddScoped<AppointmentStatusService>();
+builder.Services.AddScoped<AvailableSlotService>();
 builder.Services.AddScoped<AuthService>();
+builder.Services.AddScoped<BusinessService>();
+builder.Services.AddScoped<OfferService>();
+builder.Services.AddScoped<PointsService>();
+builder.Services.AddScoped<ReviewService>();
 
 builder.Services.AddDbContext<BackendContext>(options =>
     options.UseMySql(

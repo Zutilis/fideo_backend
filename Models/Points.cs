@@ -5,15 +5,9 @@ namespace SlamBackend.Models
 {
     public class Points
     {
-        [Key]
-        [Column(Order = 0)]
-        [ForeignKey("User")]
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public User User { get; set; }
 
-        [Key]
-        [Column(Order = 1)]
-        [ForeignKey("Business")]
         public int BusinessId { get; set; }
         public Business Business { get; set; }
 

@@ -8,6 +8,6 @@ namespace SlamBackend.Models
         public string LastName { get; set; }
         public string Email { get; set; }
         public DateTime CreatedAt { get; set; }
-        public List<LoyaltyPoints> LoyaltyPoints { get; set; }
+        public List<Points> Points { get; set; }
     }
 }

@@ -13,6 +13,6 @@
         public int DiscountTreshold {  get; set; }
         public double DiscountValue {  get; set; }
         public DateTime CreatedAt { get; set; }
-        public int OwnerId { get; set; }
+        public string OwnerId { get; set; }
     }
 }

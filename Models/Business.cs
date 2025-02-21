@@ -18,9 +18,9 @@ namespace SlamBackend.Models
         public int DiscountTreshold {  get; set; }
         public double DiscountValue {  get; set; }
         public DateTime CreatedAt { get; set; }
-        public List<LoyaltyPoints> LoyaltyPoints { get; set; }
+        public List<Points> Points { get; set; }
 
-        public int OwnerId { get; set; }
+        public string OwnerId { get; set; }
         [ForeignKey("OwnerId")]
         public User Owner { get; set; }
     }
