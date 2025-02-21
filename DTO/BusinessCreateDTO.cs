@@ -1,12 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace SlamBackend.Models
+﻿namespace SlamBackend.DTO
 {
-    public class Business
+    public class BusinessCreateDTO
     {
-        [Key]
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Street { get; set; }
@@ -18,10 +13,6 @@ namespace SlamBackend.Models
         public int DiscountTreshold {  get; set; }
         public double DiscountValue {  get; set; }
         public DateTime CreatedAt { get; set; }
-        public List<LoyaltyPoints> LoyaltyPoints { get; set; }
-
         public int OwnerId { get; set; }
-        [ForeignKey("OwnerId")]
-        public User Owner { get; set; }
     }
 }

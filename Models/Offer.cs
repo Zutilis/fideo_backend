@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SlamBackend.Models
 {
-    public class Service
+    public class Offer
     {
         [Key]
         public int Id { get; set; }
@@ -12,6 +12,7 @@ namespace SlamBackend.Models
         public double Price {  get; set; }
         public int Duration {  get; set; }
 
+        public int BusinessId { get; set; }
         [ForeignKey("BusinessId")]
         public Business Business { get; set; }
     }

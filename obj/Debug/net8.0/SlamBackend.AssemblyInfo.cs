@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SlamBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05dabaabae68ab616709ac46b67331c7d76f34c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95e42070ff89e68e662ce3403f644f84bc57e6fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("SlamBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SlamBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

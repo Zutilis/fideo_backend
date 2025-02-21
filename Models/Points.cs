@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SlamBackend.Models
 {
-    public class LoyaltyPoints
+    public class Points
     {
         [Key]
         [Column(Order = 0)]
@@ -17,7 +17,7 @@ namespace SlamBackend.Models
         public int BusinessId { get; set; }
         public Business Business { get; set; }
 
-        public int Points {  get; set; }
-        public DateTime LastUpdated { get; set; }
+        public int Balance {  get; set; }
+        public DateTime LastUpdatedDate { get; set; }
     }
 }

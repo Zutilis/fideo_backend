@@ -11,6 +11,14 @@ namespace SlamBackend.CourseDbContext
         {
 
         }
+
+        public DbSet<Appointment> Appointments { get; set; }
+        public DbSet<AppointmentStatus> AppointmentStatus { get; set; }
+        public DbSet<AvailableSlot> AvailableSlots { get; set; }
+        public DbSet<Business> Businesses { get; set; }
+        public DbSet<Points> Points { get; set; }
+        public DbSet<Review> Reviews { get; set; }
+        public DbSet<Offer> Offers { get; set; }
     }
 }
 
