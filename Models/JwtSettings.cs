@@ -1,4 +1,4 @@
-﻿namespace SlamBackend.Configurations
+﻿namespace Fideo.Configurations
 {
     public class JwtSettings
     {

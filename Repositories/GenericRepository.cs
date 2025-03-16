@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using SlamBackend.CourseDbContext;
+using Fideo.CourseDbContext;
 
-namespace SlamBackend.Repositories
+namespace Fideo.Repositories
 {
     public class GenericRepository<T> where T : class
     {

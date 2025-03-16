@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/julesducrot/Documents/VsCodeProjects/Cours/ProjetSlam/slam_backend/SlamBackend.csproj": {}
+    "/Users/julesducrot/Documents/VsCodeProjects/Cours/Fideo/fideo_backend/SlamFideoroj": {}
   },
   "projects": {
-    "/Users/julesducrot/Documents/VsCodeProjects/Cours/ProjetSlam/slam_backend/SlamBackend.csproj": {
+    "/Users/julesducrot/Documents/VsCodeProjects/Cours/Fideo/fideo_backend/SlamFideoroj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/julesducrot/Documents/VsCodeProjects/Cours/ProjetSlam/slam_backend/SlamBackend.csproj",
-        "projectName": "SlamBackend",
-        "projectPath": "/Users/julesducrot/Documents/VsCodeProjects/Cours/ProjetSlam/slam_backend/SlamBackend.csproj",
+        "projectUniqueName": "/Users/julesducrot/Documents/VsCodeProjects/Cours/Fideo/fideo_backend/SlamFideoroj",
+        "projectName": "Fideo",
+        "projectPath": "/Users/julesducrot/Documents/VsCodeProjects/Cours/Fideo/fideo_backend/SlamFideoroj",
         "packagesPath": "/Users/julesducrot/.nuget/packages/",
-        "outputPath": "/Users/julesducrot/Documents/VsCodeProjects/Cours/ProjetSlam/slam_backend/obj/",
+        "outputPath": "/Users/julesducrot/Documents/VsCodeProjects/Cours/Fideo/fideo_backend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/julesducrot/.nuget/NuGet/NuGet.Config"

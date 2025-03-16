@@ -1,9 +1,9 @@
 ﻿
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using SlamBackend.Models;
+using Fideo.Models;
 
-namespace SlamBackend.CourseDbContext
+namespace Fideo.CourseDbContext
 {
     public class BackendContext : IdentityDbContext<User, Role, string>
     {

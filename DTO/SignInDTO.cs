@@ -1,4 +1,4 @@
-﻿namespace SlamBackend.DTO
+﻿namespace Fideo.DTO
 {
     public class SignInDTO
     {

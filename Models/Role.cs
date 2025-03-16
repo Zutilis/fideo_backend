@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace SlamBackend.Models
+namespace Fideo.Models
 {
     public class Role : IdentityRole
     {

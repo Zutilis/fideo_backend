@@ -1,7 +1,7 @@
-﻿using SlamBackend.CourseDbContext;
-using SlamBackend.Models;
+﻿using Fideo.CourseDbContext;
+using Fideo.Models;
 
-namespace SlamBackend.Repositories
+namespace Fideo.Repositories
 {
     public class AppointmentRepository : GenericRepository<Appointment>
     {

@@ -4,11 +4,11 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using SlamBackend.Configurations;
-using SlamBackend.DTO;
-using SlamBackend.Models;
+using Fideo.Configurations;
+using Fideo.DTO;
+using Fideo.Models;
 
-namespace SlamBackend.Services
+namespace Fideo.Services
 {
     public class AuthService
     {

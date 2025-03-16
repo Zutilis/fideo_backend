@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace SlamBackend.Models
+namespace Fideo.Models
 {
     public class AppointmentStatus
     {

@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "SlamBackend/1.0.0": {
+      "Fideo/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
@@ -18,7 +18,7 @@
           "Swashbuckle.AspNetCore": "7.0.0"
         },
         "runtime": {
-          "SlamBackend.dll": {}
+          "Fideo.dll": {}
         }
       },
       "Azure.Core/1.25.0": {
@@ -1025,7 +1025,7 @@
     }
   },
   "libraries": {
-    "SlamBackend/1.0.0": {
+    "Fideo/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

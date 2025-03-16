@@ -4533,11 +4533,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/julesducrot/Documents/VsCodeProjects/Cours/ProjetSlam/slam_backend/SlamBackend.csproj",
-      "projectName": "SlamBackend",
-      "projectPath": "/Users/julesducrot/Documents/VsCodeProjects/Cours/ProjetSlam/slam_backend/SlamBackend.csproj",
+      "projectUniqueName": "/Users/julesducrot/Documents/VsCodeProjects/Cours/Fideo/fideo_backend/Fideo.csproj",
+      "projectName": "Fideo",
+      "projectPath": "/Users/julesducrot/Documents/VsCodeProjects/Cours/Fideo/fideo_backend/Fideo.csproj",
       "packagesPath": "/Users/julesducrot/.nuget/packages/",
-      "outputPath": "/Users/julesducrot/Documents/VsCodeProjects/Cours/ProjetSlam/slam_backend/obj/",
+      "outputPath": "/Users/julesducrot/Documents/VsCodeProjects/Cours/Fideo/fideo_backend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/julesducrot/.nuget/NuGet/NuGet.Config"

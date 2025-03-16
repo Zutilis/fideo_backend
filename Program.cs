@@ -3,17 +3,17 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Text;
-using SlamBackend.CourseDbContext;
-using SlamBackend.Models;
-using SlamBackend.Repositories;
-using SlamBackend.Services;
-using SlamBackend.Configurations;
+using Fideo.CourseDbContext;
+using Fideo.Models;
+using Fideo.Repositories;
+using Fideo.Services;
+using Fideo.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
 
-// Ajouter les services n�cessaires
+// Ajouter les services nécessaires
 builder.Services.AddControllers();
 
 builder.Services.AddCors(options => {

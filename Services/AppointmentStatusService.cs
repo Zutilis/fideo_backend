@@ -1,8 +1,8 @@
-using SlamBackend.DTO;
-using SlamBackend.Models;
-using SlamBackend.Repositories;
+using Fideo.DTO;
+using Fideo.Models;
+using Fideo.Repositories;
 
-namespace SlamBackend.Services
+namespace Fideo.Services
 {
     public class AppointmentStatusService
     {

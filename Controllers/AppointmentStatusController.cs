@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using SlamBackend.DTO;
-using SlamBackend.Models;
-using SlamBackend.Services;
+using Fideo.DTO;
+using Fideo.Models;
+using Fideo.Services;
 
 namespace WebApplication1.Controllers
 {
