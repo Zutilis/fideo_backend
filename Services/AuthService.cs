@@ -26,23 +26,6 @@ namespace Fideo.Services
             _jwtSettings = jwtSettings.Value;
         }
 
-        public async Task SignIn(SignInDTO signInDTO)
-        {
-            User user = new User
-            {
-                FirstName = signInDTO.FirstName,
-                LastName = signInDTO.LastName,
-                Email = signInDTO.Email,
-                UserName = signInDTO.Email
-            };
-
-            var result = await _userManager.CreateAsync(user, signInDTO.Password);
-
-            if (result.Succeeded) return;
-
-            throw new BadHttpRequestException(result.Errors.FirstOrDefault().Description);
-        }
-
         public async Task CreateRole(RoleDTO roleDTO)
         {
             Role role = new Role
@@ -58,12 +41,29 @@ namespace Fideo.Services
             throw new BadHttpRequestException(result.Errors.FirstOrDefault().Description);
         }
 
+        public async Task SignIn(SignInDTO signInDTO)
+        {
+            User user = new User
+            {
+                FirstName = signInDTO.FirstName,
+                LastName = signInDTO.LastName,
+                Email = signInDTO.Email,
+                UserName = signInDTO.Email,
+            };
+
+            var result = await _userManager.CreateAsync(user, signInDTO.Password);
+
+            if (result.Succeeded) return;
+
+            throw new BadHttpRequestException(result.Errors.FirstOrDefault().Description);
+        }
+
         public async Task<string> LogIn(LoginDTO loginDTO)
         {
             var user = await _userManager.FindByEmailAsync(loginDTO.Email);
 
             if (user == null)
-                throw new BadHttpRequestException("Utilisateur introuvable");
+                throw new UnauthorizedAccessException("Utilisateur introuvable");
 
             if (!await _userManager.CheckPasswordAsync(user, loginDTO.Password))
                 throw new UnauthorizedAccessException("Mot de passe incorrect");

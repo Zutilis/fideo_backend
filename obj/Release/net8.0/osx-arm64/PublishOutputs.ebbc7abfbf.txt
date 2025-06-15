@@ -1,0 +1,4 @@
+/Users/julesducrot/Documents/VsCodeProjects/Cours/Fideo/fideo_backend/dist/appsettings.Development.json
+/Users/julesducrot/Documents/VsCodeProjects/Cours/Fideo/fideo_backend/dist/appsettings.json
+/Users/julesducrot/Documents/VsCodeProjects/Cours/Fideo/fideo_backend/dist/Fideo.pdb
+/Users/julesducrot/Documents/VsCodeProjects/Cours/Fideo/fideo_backend/dist/Fideo

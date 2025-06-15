@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fideo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+665e86b81221a7fc246a95bda7f454fa1c133120")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67faf57fd3c06338d91962df6e4ee2d4f5b91730")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fideo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fideo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -9,9 +9,14 @@ using Fideo.Repositories;
 using Fideo.Services;
 using Fideo.Configurations;
 
-var builder = WebApplication.CreateBuilder(args);
-
+var builder = WebApplication.CreateBuilder(new WebApplicationOptions
+{
+    EnvironmentName = Environments.Production
+});
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
+
+Console.WriteLine("Loaded connection string:");
+Console.WriteLine(builder.Configuration.GetConnectionString("DefaultConnection") ?? "Not found");
 
 // Ajouter les services nécessaires
 builder.Services.AddControllers();
@@ -89,12 +94,11 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-
     app.UseSwaggerUI();
 }
 
 app.UseCors("AllowLocalhost");
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
