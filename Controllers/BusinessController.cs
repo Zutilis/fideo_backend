@@ -21,6 +21,12 @@ namespace WebApplication1.Controllers
             _offerService = offerService;
         }
 
+        [HttpGet("")]
+        public async Task<IActionResult> GetBusinesses()
+        {
+            return Ok(_service.GetBusinesses());
+        }
+
         [Authorize(AuthenticationSchemes = "Bearer")]
         [HttpGet("me")]
         public async Task<IActionResult> GetBusinessByUser()
