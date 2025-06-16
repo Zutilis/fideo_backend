@@ -25,19 +25,27 @@ namespace Fideo.Services
                 Country = business.Country,
                 PhoneNumber = business.PhoneNumber,
                 PointsPerEuro = business.PointsPerEuro,
-                DiscountTreshold = business.DiscountTreshold,
-                DiscountValue = business.DiscountValue,
                 CreatedAt = business.CreatedAt,
                 OwnerId = business.OwnerId,
             });
         }
 
-        public Business FindBusiness(int business_id)
+        public Business GetBusiness(int business_id)
         {
-            return repository.getContext().Businesses.Find(business_id);
+            return repository.getContext()
+                .Businesses
+                .Find(business_id);
         }
 
-        public List<Business> getBusinesses()
+        public List<Business> GetBusinessByUser(string user_id)
+        {
+            return repository.getContext()
+                .Businesses
+                .Where(b => b.OwnerId == user_id)
+                .ToList();
+        }
+
+        public List<Business> GetBusinesses()
         {
             return repository.GetAll();
         }

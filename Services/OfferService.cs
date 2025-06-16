@@ -13,7 +13,7 @@ namespace Fideo.Services
             this.repository = repository;
         }
 
-        public void CreateOffer(OfferCreateDTO offer)
+        public void CreateOffer(int businessId, OfferCreateDTO offer)
         {
             repository.Create(new Offer
             {
@@ -21,13 +21,15 @@ namespace Fideo.Services
                 Description = offer.Description,
                 Price = offer.Price,
                 Duration = offer.Duration,
-                BusinessId = offer.BusinessId,
+                BusinessId = businessId,
             });
         }
 
-        public Offer FindOffer(int offer_id)
+        public List<Offer> GetOffersByBusiness(int businessId)
         {
-            return repository.getContext().Offers.Find(offer_id);
+            return repository.getContext().Offers
+                .Where(o => o.BusinessId == businessId)
+                .ToList();
         }
 
         public List<Offer> GetOffers()

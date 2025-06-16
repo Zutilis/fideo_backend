@@ -24,7 +24,7 @@ namespace Fideo.Services
             });
         }
 
-        public Review FindReview(int review_id)
+        public Review GetReview(int review_id)
         {
             return repository.getContext().Reviews.Find(review_id);
         }

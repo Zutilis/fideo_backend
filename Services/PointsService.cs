@@ -24,7 +24,7 @@ namespace Fideo.Services
             });
         }
 
-        public Points FindPoints(int points_id)
+        public Points GetPoints(int points_id)
         {
             return repository.getContext().Points.Find(points_id);
         }

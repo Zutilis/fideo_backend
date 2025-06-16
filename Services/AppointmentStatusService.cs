@@ -21,7 +21,7 @@ namespace Fideo.Services
             });
         }
 
-        public AppointmentStatus FindAppointmentStatus(int appointment_status_id)
+        public AppointmentStatus GetAppointmentStatus(int appointment_status_id)
         {
             return repository.getContext().AppointmentStatus.Find(appointment_status_id);
         }

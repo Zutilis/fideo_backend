@@ -15,15 +15,14 @@ namespace WebApplication1.Controllers
 
         [HttpPost]
         [Route("signin")]
-        public async Task<ActionResult> SignInAsync(SignInDTO signin)
+        public async Task<ActionResult> SignInAsync([FromBody] SignInDTO signin)
         {
-            await _authService.SignIn(signin);
-            return Ok();
+            return Ok(await _authService.SignIn(signin));
         }
 
         [HttpPost]
         [Route("login")]
-        public async Task<ActionResult> LoginAsync(LoginDTO login)
+        public async Task<ActionResult> LoginAsync([FromBody] LoginDTO login)
         {
             return Ok(await _authService.LogIn(login));
         }

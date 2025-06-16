@@ -10,8 +10,6 @@
         public string Country { get; set; }
         public string PhoneNumber { get; set; }
         public int PointsPerEuro {  get; set; }
-        public int DiscountTreshold {  get; set; }
-        public double DiscountValue {  get; set; }
         public DateTime CreatedAt { get; set; }
         public string OwnerId { get; set; }
     }

@@ -41,7 +41,7 @@ namespace Fideo.Services
             throw new BadHttpRequestException(result.Errors.FirstOrDefault().Description);
         }
 
-        public async Task SignIn(SignInDTO signInDTO)
+        public async Task<object> SignIn(SignInDTO signInDTO)
         {
             User user = new User
             {
@@ -53,12 +53,14 @@ namespace Fideo.Services
 
             var result = await _userManager.CreateAsync(user, signInDTO.Password);
 
-            if (result.Succeeded) return;
+            if (result.Succeeded) {
+                return GenerateJwtToken(user);
+            }
 
             throw new BadHttpRequestException(result.Errors.FirstOrDefault().Description);
         }
 
-        public async Task<string> LogIn(LoginDTO loginDTO)
+        public async Task<object> LogIn(LoginDTO loginDTO)
         {
             var user = await _userManager.FindByEmailAsync(loginDTO.Email);
 
@@ -78,7 +80,10 @@ namespace Fideo.Services
                 new Claim(JwtRegisteredClaimNames.Sub, user.Id),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(ClaimTypes.NameIdentifier, user.Id),
-                new Claim(ClaimTypes.Email, user.Email ?? ""),
+                new Claim("Id", user.Id),
+                new Claim("Email", user.Email ?? ""),
+                new Claim("FirstName", user.FirstName ?? ""),
+                new Claim("LastName", user.LastName ?? "")
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.SecretKey));
@@ -88,7 +93,7 @@ namespace Fideo.Services
                 issuer: _jwtSettings.Issuer,
                 audience: _jwtSettings.Audience,
                 claims: claims,
-                expires: DateTime.UtcNow.AddHours(1),
+                expires: DateTime.UtcNow.AddYears(5),
                 signingCredentials: credentials
             );
 

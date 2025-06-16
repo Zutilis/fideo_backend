@@ -24,7 +24,7 @@ namespace Fideo.Services
             });
         }
 
-        public AvailableSlot FindAvailableSlot(int available_slot_id)
+        public AvailableSlot GetAvailableSlot(int available_slot_id)
         {
             return repository.getContext().AvailableSlots.Find(available_slot_id);
         }

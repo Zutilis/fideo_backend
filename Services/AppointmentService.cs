@@ -23,7 +23,7 @@ namespace Fideo.Services
             });
         }
 
-        public Appointment FindAppointment(int appointment_id)
+        public Appointment GetAppointment(int appointment_id)
         {
             return repository.getContext().Appointments.Find(appointment_id);
         }
